@@ -7,13 +7,13 @@ jobs:
   package:
     name: This is npm install
     steps:
-    - uses: actions/checkout
+    - uses: actions/checkout@v1
     - name: npm install
       run: npm i
     
   test:
     steps:
-    - uses: actions/checkout
+    - uses: actions/checkout@v1
     - name: npm install
       run: npm i 
     
