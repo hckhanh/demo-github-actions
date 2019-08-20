@@ -3,11 +3,17 @@ name: This is demo workflow
 on: [push]
 
 jobs:
+
   npm install:
     name: This is npm install
-    run: npm i
+    steps:
+    - uses: actions/checkout
+      run: npm i
+    
   npm install2:
-    run: npm i 
+    steps:
+    - uses: actions/checkout
+      run: npm i 
     
   build:
     runs-on: ubuntu-latest
