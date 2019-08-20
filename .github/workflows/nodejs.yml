@@ -4,14 +4,14 @@ on: [push]
 
 jobs:
 
-  npm install:
+  package:
     name: This is npm install
     steps:
     - uses: actions/checkout
     - name: npm install
       run: npm i
     
-  npm install2:
+  test:
     steps:
     - uses: actions/checkout
     - name: npm install
