@@ -1,6 +1,6 @@
 name: This is demo workflow
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
 
