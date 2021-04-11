@@ -3,19 +3,6 @@ name: This is demo workflow
 on: [push, pull_request]
 
 jobs:
-
-  package:
-    name: This is npm install
-    steps:
-    - uses: actions/checkout@v1
-    - name: npm install
-      run: npm i
-    
-  test:
-    steps:
-    - uses: actions/checkout@v1
-    - name: npm install
-      run: npm i 
     
   build:
     runs-on: ubuntu-latest
